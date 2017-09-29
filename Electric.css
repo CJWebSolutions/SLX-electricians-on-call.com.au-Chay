@@ -1,0 +1,134 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+/*----------------------------------------------------------------
+    Branding Colour
+----------------------------------------------------------------*/
+p, ul, ol, ul li, ol li, ul a, ol a, ul a:hover, ol a:hover, ul a:focus, ol a:focus, h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+h1, h2, h3, .btn, strong{
+        font-weight:600;
+}
+p, ul, ol, ul li, ol li, ul a, ol a, ul a:hover, ol a:hover, ul a:focus, ol a:focus, #content h2, #contact h2, hr, .formbuilder-form label {
+    color: #222;
+}
+p, ul, ol, ul li, ol li, ul a, ol a, ul a:hover, ol a:hover, ul a:focus, ol a:focus, .formbuilder-form label{
+    font-weight:400;
+}
+.formbuilder-form input#submit-form,  #header2b a,#banner1 h1, #banner1 p {
+    color:#fff;
+}
+#services h3, h2, #header2a a, #header2a:before,header a, header span {
+    color: #f7c51e;
+}
+hr{
+    width: 25%;
+    margin:0;
+    border:2px solid #222;
+    position:relative;
+}
+.btn,.btn:hover, .btn:focus, #header2b a{text-decoration:none;}
+
+/*Header*/
+#header2b {line-height:10px;}
+#header2b a{font-size:17px;}
+#header2{padding-bottom: 25px;}
+
+/*Banner*/
+#banner, #banner1 h1{
+    margin:0;
+    text-align:center;
+}
+.banner_cover { 
+    opacity:0.6;
+    background-color:#000;}
+#banner1{width:100%;}
+
+/*Content*/
+#content1a, #content2, #content6, #contact2c, #contact2d, #contact2e, #contact2f, #contact2g, #contact1b{display:none;}
+#content1b{width:100%;}
+#content { 
+    padding-bottom:0px;}
+
+
+#wrapper {display: flex; flex-direction: column;}
+/*Services*/
+#services { 
+    border-top: 5px solid #33363d;
+    border-bottom: 5px solid #33363d;}
+#service1,#service2,#service3,#service4{
+    padding: 25px 10px 25px 10px;}
+#service1:hover,#service2:hover,#service3:hover,#service4:hover{
+    transform: scale(1.1);
+}
+#content .img-responsive, #service1,#service2,#service3,#service4{
+    transition: 0.2s 0.2s ease-out;
+}    
+#content .img-responsive{
+    border-radius: 10px;
+    box-shadow: 120px 20px 20px rgba(0, 0, 0, 0.17);}
+#content .img-responsive:hover {
+    border: 10px #fff solid;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.17);}
+    
+/*Forms & Buttons*/
+.btn{
+    background: rgba(0,0,0,0.6);
+    border-radius:25px;
+}
+.formbuilder-form input#submit-form, .formbuilder-form input#submit-form:hover, .formbuilder-form input#submit-form:focus, .formbuilder-form input#submit-form:active, .formbuilder-form input#submit-form.active, .open>.dropdown-toggle.btn, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form{
+    border-radius:25px;
+    background-color: #f7c51e;
+    color: #fff;
+}
+@media (min-width: 711px) {
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open>.dropdown-toggle.btn, .formbuilder-form input#submit-form:hover, .formbuilder-form input#submit-form:focus, .formbuilder-form input#submit-form:active, .formbuilder-form input#submit-form.active, .open>.dropdown-toggle.btn, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:hover, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:focus, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:active, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form.active, .open>.dropdown-toggle.btn {
+    border-radius:25px;
+    text-decoration:none;
+    background: rgba(247,197,30,0.6);
+    color: #fff;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);}
+}
+.formbuilder-form input#submit-form{
+    background-color:#f7c51e;
+}
+.form, #contact_form_form, #quote_form_form {
+    background-color: transparent;
+    border-radius:25px;
+}
+.formbuilder-form input, .formbuilder-form textarea,.formbuilder-form input:hover, .formbuilder-form textarea:hover,.formbuilder-form input:focus, .formbuilder-form textarea:focus {
+    border-radius: 5px;
+    background-color:#e5e5e5;}
+
+/*Footer*/
+footer *, footer a , footer {color: #fff;}
+footer {
+    background: url(/uploads/electriciansoncall/images/images/Banners%20%26%20Backgrounds/project-bg.jpg);
+    padding: 25px 0 25px;}
+/*----------------------------------------------------------------
+    Media Queries
+----------------------------------------------------------------*/
+@media only screen and (min-width: 767px){
+    .list_half {
+        width: 100%;
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;}
+    }
+@media (max-width: 767px) {
+    hr {
+        width: 80%;
+        text-align: center;
+        margin: 10%;}
+    #service3 {clear:left }
+    }
+@media (max-width: 1100px) {.content_block {padding-bottom: 0px;}}
